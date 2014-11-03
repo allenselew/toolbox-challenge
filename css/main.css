@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+body {
+	font-family: 'Noto Sans', Helvetica, sans-serif;
+	background-image: url(../img/paperbg.png);
+	z-index: 1;
+}
+
+header {
+	text-align: center;
+	background-color: rgba(255,255,255,0.3);
+	margin: 1em;
+	padding: 0.5em;
+}
+
+h1 {
+	margin: 0;
+}
+
+#game-board {
+	text-align: center;
+	display: none;
+}
+
+#game-board img {
+	height: 10%;
+	width: 10%;
+	min-height: 125px;
+	min-width: 125px;
+	max-width: 175px;
+	max-height: 175px;
+	border: 1px solid black;
+}
+
+#htpButton, #startButtonDiv {
+	display: inline;
+	margin: 1em;
+	text-align: center;
+}
+
+#centeredButtons {
+	text-align: center;
+}
+
+#info {
+	text-align: center;
+	display: none;
+}
+
+#info p {
+	display: inline-block;
+	margin: 1em;
+}
+
+#darkLayer {
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#instructions-box, #win-screen {
+	background-image: url(../img/paperbg.png);
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	position: absolute;
+	display: none;
+	width: 30%;
+	border: 2px solid black;
+	border-radius: 1em;
+}
+
+#resetButton {
+	text-align: center;
+}
+
+#win-screen {
+	text-align: center;
+	padding: 1em;
+	top: 40%;
+}
+
+#instructions-box h2 {
+	text-align: center;
+}
+
+#instructions-box ol {
+	margin: 1em;
+	padding: 2em;
+}
+
+#okayButton {
+	text-align: center;
+	margin-bottom: 1em;
+}

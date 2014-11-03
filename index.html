@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Sean Allen">
+        <meta name="description" content="Memory Game Assignment">
+
+        <title>Memory</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Memory</h1>
+            </header>
+
+            <div id="instructions-box">
+                <h2>Memory Match Game Rules:</h2>
+                <ol>
+                    <li>Turn over 2 cards at a time.</li>
+                    <li>A player makes a "match" if the two cards turned over are identical.</li>
+                    <li>If the two cards do not match, they are flipped back over.</li>
+                    <li>Matched cards will remain revealed.</li>
+                    <li>The game ends when all cards are matched.</li>
+                </ol>
+                <div id="okayButton">
+                    <button type="button" class="btn btn-default">Okay</button>
+                </div>    
+            </div>
+
+            <div id="win-screen">
+                <p id="timeMsg"></p>
+                <p id="recordTimeMsg"></p>
+                <div id="resetButtonHolder">
+                    <button type="button" class="btn btn-success" id="resetButton">Play Again
+                    </button>
+                </div>
+                <audio id="audio" src="audio/slampeii.mp3" type="audio/mpeg" preload="auto"></audio>
+            </div>
+
+            <div id="centeredButtons">
+                <div id="htpButton">
+                   <button type="button" class="btn btn-danger"> How to Play</button>
+                </div>
+                
+                <div id="startButtonDiv">
+                    <button type="button" class="btn btn-default" id="startButton">Start New Game</button>
+                </div>
+            </div>
+
+            <div id="info">
+                <p id="elapsed-seconds">Elapsed Time: 0</p>
+                <p id="matches">Matches: 0</p>
+                <p id="mistakes">Mistakes: 0</p>
+                <p id="remaining">Remaining Pairs: 8</p>
+            </div>
+
+            <div id="game-board"></div>
+
+            <div id="darkLayer"></div>
+        </main>
+
+        
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
